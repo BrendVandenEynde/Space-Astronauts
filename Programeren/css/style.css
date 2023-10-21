@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+canvas {
+    display: block;
+}
+
+h2{
+    font-size:15px;
+    margin-top: 0px;
+    margin-bottom:0px;
+    text-align: center;
+    
+}
+
+p{
+    color:white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+
+.times{
+    position:fixed;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left:auto;
+    margin-right: auto;
+    display: inline-block;
+    text-align: right;
+    left: auto;
+    right: 0px;
+}
+
+#ScoreBoard {
+    font-size:25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color:white;
+    
+}
+
+span{
+    color:white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+div{
+    position: fixed;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    text-shadow:
+    0 0 7px rgba(255, 255, 255, 0.842),
+    0 0 10px rgba(255, 255, 255, 0.89),
+    0 0 21px rgba(255, 255, 255, 0.877),
+    0 0 42px rgb(0, 174, 255),
+    0 0 82px rgb(0, 255, 255),
+    0 0 92px rgb(0, 238, 255),
+    0 0 102px rgb(0, 195, 255),
+    0 0 151px rgb(0, 255, 149);
+    text-align:center;
+    animation: flicker 2.5s infinite alternate;
+}
+
+.flicker-slow{
+    animation: flicker 3s linear infinite;
+  }
+  
+.flicker-fast{
+    animation: flicker 1s linear infinite;
+}
+
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+	}
+}
+
+
